@@ -19,7 +19,7 @@ const Banner = () => {
         }) ()
     }, []);
     function truncate(str, n){
-        return str?.length > n ? str.substr(0, n-1) + "..." : str;
+        return str?.length > n ? str.substr(0, n-1) + '...': str;
     }
   return (
     <div 
@@ -36,7 +36,7 @@ const Banner = () => {
             <h1 className="banner__title">
                 {movie?.title|| movie?.name|| movie?.original_name}
             </h1>
-            <div className="banner__contents">
+            <div className="banner__buttons">
                 <button className="banner__button play">Play</button>
                 <button className="banner__button">My List</button>
             </div>
